@@ -11,7 +11,7 @@ Add to the dependencies section of your `.fnx.fnl` file:
 
 Install and validate:
 
-```sh
+```bash
 fnx dep install
 
 fnx --eval "((. (require :hello-world) :try))"
