@@ -24,7 +24,7 @@ fnx --eval "((. (require :hello-world) :try))"
 Create a `demo.fnl` file:
 
 ```fennel
-(local hello (require :hello-world))
+(local hello (require "hello-world"))
 
 (print (hello.try))
 ```
