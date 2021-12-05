@@ -11,10 +11,26 @@ Create your first `.fnx.fnl` file in some directory:
    :hello-world {:fennel/fnx {:git/url "https://github.com/gbaptista/fnx-hello-world.git"}}}}
 ```
 
-Install and validate:
+## Install and validate
 
 ```sh
 fnx dep install
 
 fnx --eval "((. (require :hello-world) :try))"
+```
+
+## Use the package in your code
+
+Create a `demo.fnl` file:
+
+```fennel
+(local hello (require :hello-world))
+
+(print (hello.try))
+```
+
+Run the file:
+
+```sh
+fnx demo.fnl
 ```
