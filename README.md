@@ -9,7 +9,7 @@ Create your first `.fnx.fnl` file in some directory:
  :version "0.0.1"
 
  :dependencies {
-   :hello-world {:fennel/fnx {:git/url "https://github.com/gbaptista/fnx-hello-world.git"}}}}
+   :hello-world {:fennel/fnx {:git/github "gbaptista/fnx-hello-world"}}}}
 ```
 
 ## Install and validate
